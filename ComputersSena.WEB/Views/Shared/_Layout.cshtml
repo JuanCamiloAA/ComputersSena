@@ -1,0 +1,92 @@
+﻿<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"]</title>
+    <!-- Google Font: Source Sans Pro -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
+    <!-- Font awesome-->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" crossorigin="anonymous" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- adminLte css -->
+    <link href="~/StylesPlantilla/Css/adminlte.min.css" rel="stylesheet" />
+    <!--Styles-->
+    <link href="~/css/site.css" rel="stylesheet" />
+    <!-- overlayScrollbars -->
+    <link href="~/StylesPlantilla/Css/OverlayScrollbars.min.css" rel="stylesheet" />
+    <!--Datatables-->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.0/css/jquery.dataTables.min.css">
+    <!--Alertify-->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/alertify.min.css" />
+    <!-- Bootstrap theme -->
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/css/themes/bootstrap.min.css" />
+</head>
+<body class="hold-transition sidebar-mini layout-fixed">
+    <div class="wrapper">
+        <partial name="_Navbar" />
+        <partial name="_SideBar" />
+        <div class="content-wrapper" style="min-height: 543px;">
+            <div class="container-fluid">
+                @RenderBody()
+            </div>
+        </div>
+        <partial name="_Footer"/>
+    </div>
+
+    <!-- MODAL GLOBAL -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="form-modal">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <a href="C:\Users\57311\OneDrive\Escritorio\Asp .net\ComputersSena\ComputersSena.WEB\Views\Shared\_Layout.cshtml">C:\Users\57311\OneDrive\Escritorio\Asp .net\ComputersSena\ComputersSena.WEB\Views\Shared\_Layout.cshtml</a>
+                <div class="modal-header">
+                    <h5 class="modal-title text-info"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- MODAL GLOBAL -->
+    <div class="modal fade" tabindex="-1" role="dialog" id="form-modal2">
+        <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title text-info"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- AdminLte js -->
+    <script src="~/StylesPlantilla/Js/adminlte.js"></script>
+    <!--Datatables-->
+    <script src="https://cdn.datatables.net/1.11.0/js/jquery.dataTables.min.js"></script>
+    <!--Scrollbars js-->
+    <script src="~/StylesPlantilla/Js/jquery.overlayScrollbars.min.js"></script>
+    <!--Alertify-->
+    <script src="//cdn.jsdelivr.net/npm/alertifyjs@1.13.1/build/alertify.min.js"></script>
+    <!--Site js-->
+    <script src="~/js/site.js"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+    @await RenderSectionAsync("Styles", required: false)
+
+</body>
+</html>

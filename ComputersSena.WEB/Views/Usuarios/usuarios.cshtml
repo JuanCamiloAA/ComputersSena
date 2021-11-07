@@ -1,0 +1,28 @@
+﻿<div class="row">
+    <div class="col mt-3">
+        <a onclick="mostrarModal('@Url.Action("CrearCliente","Clientes",null,Context.Request.Scheme)','Crear usuario')" class="btn btn-dark mb-3" style="color:white"><i class="fas fa-user-plus mr-2"></i>Crear Usuario </a>
+        <div class="table-responsive">
+            <table class="table table-bordered table-striped table-hover" cellpadding="0" id="tabla">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Documento</th>
+                        <th>Tipo Documento</th>
+                        <th>Correo</th>
+                        <th>Telefono</th>
+                        <th>Dirrecion</th>
+                        <th>Rol</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+
+@section Scripts{
+    <script src="~/DataTable/tabla.js"></script>
+}
